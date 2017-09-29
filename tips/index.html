@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="EGOISTK21" />
+
+
+
+<meta name="description" content="macOS食用指南抹盘重装 需要 Install macOS High Sierra.app、8GB至少的U盘。 格式化U盘为 Mac OS 拓展（日志式）GUID分区表 终端执行  1sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tips">
+<meta property="og:url" content="https://egoistk21.xyz/tips/index.html">
+<meta property="og:site_name" content="EGOISTK21&#39;s blog">
+<meta property="og:description" content="macOS食用指南抹盘重装 需要 Install macOS High Sierra.app、8GB至少的U盘。 格式化U盘为 Mac OS 拓展（日志式）GUID分区表 终端执行  1sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-29T13:27:20.691Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tips">
+<meta name="twitter:description" content="macOS食用指南抹盘重装 需要 Install macOS High Sierra.app、8GB至少的U盘。 格式化U盘为 Mac OS 拓展（日志式）GUID分区表 终端执行  1sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>Tips | EGOISTK21&#39;s blog</title>
+
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.16/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: false,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js",
+        search: true
+    }
+</script>
+
+
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.12.1/css/jquery-ui.min.css"];
+    </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">EGOISTK21</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">弱者抱以命，强者谦以运。</p>
+        
+
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">归档</a></li>
+                        
+                            <li><a href="/tags/">标签</a></li>
+                        
+                            <li><a href="/tips/">tips</a></li>
+                        
+                            <li><a href="/about/">关于</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Facebook" href="https://www.facebook.com/EGOISTK21" title="Facebook"></a>
+                            
+                                <a class="fa Twitter" href="https://twitter.com/EGOISTK21" title="Twitter"></a>
+                            
+                                <a class="fa 新浪微博" href="http://www.weibo.com/kinged" title="新浪微博"></a>
+                            
+                                <a class="fa 简书" href="http://www.jianshu.com/users/894109905307/timeline" title="简书"></a>
+                            
+                                <a class="fa LinkedIn" href="http://www.linkedin.com/in/egoistk21" title="LinkedIn"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/EGOISTK21" title="GitHub"></a>
+                            
+                                <a class="fa V2EX" href="https://www.v2ex.com/member/EGOISTK21" title="V2EX"></a>
+                            
+                                <a class="fa Email" href="mailto:egoistk21@gmail.com" title="Email"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LeetCode/">LeetCode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/笔试题/">笔试题</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://egoistk21.github.io/OurLoveStory/">😘</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">混凝土方块瞬间移动师</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">EGOISTK21</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">EGOISTK21</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">弱者抱以命，强者谦以运。</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">归档</a></li>
+                
+                    <li><a href="/tags/">标签</a></li>
+                
+                    <li><a href="/tips/">tips</a></li>
+                
+                    <li><a href="/about/">关于</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Facebook" target="_blank" href="https://www.facebook.com/EGOISTK21" title="Facebook"></a>
+                            
+                                <a class="fa Twitter" target="_blank" href="https://twitter.com/EGOISTK21" title="Twitter"></a>
+                            
+                                <a class="fa 新浪微博" target="_blank" href="http://www.weibo.com/kinged" title="新浪微博"></a>
+                            
+                                <a class="fa 简书" target="_blank" href="http://www.jianshu.com/users/894109905307/timeline" title="简书"></a>
+                            
+                                <a class="fa LinkedIn" target="_blank" href="http://www.linkedin.com/in/egoistk21" title="LinkedIn"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/EGOISTK21" title="GitHub"></a>
+                            
+                                <a class="fa V2EX" target="_blank" href="https://www.v2ex.com/member/EGOISTK21" title="V2EX"></a>
+                            
+                                <a class="fa Email" target="_blank" href="mailto:egoistk21@gmail.com" title="Email"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/tips/index.html" class="article-date">
+      <time datetime="2017-09-12T04:35:32.000Z" itemprop="datePublished">2017-09-12</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Tips
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <style>
+    .article-meta { display: none; }
+    #container .article .article-title { padding-right: 0; }
+    .article-header {
+        padding: 0;
+        padding-top: 26px;
+        border-left: none;
+        text-align: center;
+    }
+    .article-header:hover { border-left: none; }
+    .article-title { font-size: 1.6em }
+    .article-entry hr { margin: 0;}
+    .article-meta,
+    #container .article-info-post.article-info { display: none;}
+    #container .article .article-title { padding: 0; }
+</style>
+
+
+          
+        <h1 id="macOS食用指南"><a href="#macOS食用指南" class="headerlink" title="macOS食用指南"></a>macOS食用指南</h1><h3 id="抹盘重装"><a href="#抹盘重装" class="headerlink" title="抹盘重装"></a>抹盘重装</h3><ul>
+<li>需要 Install macOS High Sierra.app、8GB至少的U盘。</li>
+<li>格式化U盘为 Mac OS 拓展（日志式）GUID分区表</li>
+<li>终端执行</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/U盘labelname --applicationpath /Applications/Install\ macOS\ High\ Sierra.app --nointeraction</div></pre></td></tr></table></figure>
+<ul>
+<li>插着U盘，按住 option 键启动 Mac，选择 USB 启动盘</li>
+<li>你可以直接覆盖安装系统(升级)，也可以在磁盘工具里面格式化抹掉整个硬盘，实现全新的干净的安装。</li>
+</ul>
+<h3 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h3><ul>
+<li><a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases/latest" target="_blank" rel="external">ShadowsocksX-NG</a> 配合 <a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif" target="_blank" rel="external">Proxy SwitchyOmega</a> 食用更佳</li>
+</ul>
+<h3 id="终端代理"><a href="#终端代理" class="headerlink" title="终端代理"></a>终端代理</h3><ul>
+<li>首先配置一下难看的Terminal</li>
+</ul>
+<p>下载 <a href="透明.terminal">透明终端描述文件</a> 双击打开，再去Terminal的偏好设置-&gt;描述文件中将其设为默认，然后重启Terminal</p>
+<ul>
+<li>然后从ShadowsocksX-NG的状态栏纸飞机那里点击Copy HTTP Proxy Shell Export Line，然后去终端里粘贴执行。<br>更方便的方法是</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi ~/.bash_profile</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//这三行是Android开发的sdk配置，请忽略</div><div class="line">export ANDROID_HOME=~/Library/Android/sdk/</div><div class="line">export PATH=$PATH:$ANDROID_HOME/tools</div><div class="line">export PATH=$PATH:$ANDROID_HOME/platform-tools</div><div class="line">//这两行才是终端代理的快捷配置</div><div class="line">alias proxy-on=&apos;export http_proxy=127.0.0.1:1087;export https_proxy=$http_proxy&apos;</div><div class="line">alias proxy-off=&apos;unset http_proxy;unset https_proxy&apos;</div></pre></td></tr></table></figure>
+<p>保存之后，再执行 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">source ~/.bash_profile</div></pre></td></tr></table></figure>
+<p>然后你就可以在通过 proxy-on 和 proxy-off 来控制终端代理了。</p>
+<h3 id="安装-Xcode-Command-Line-Tools"><a href="#安装-Xcode-Command-Line-Tools" class="headerlink" title="安装 Xcode Command Line Tools"></a>安装 Xcode Command Line Tools</h3><ul>
+<li>终端执行</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xcode-select --install</div></pre></td></tr></table></figure>
+<h3 id="配置远程服务器SSH密钥认证自动登录"><a href="#配置远程服务器SSH密钥认证自动登录" class="headerlink" title="配置远程服务器SSH密钥认证自动登录"></a>配置远程服务器SSH密钥认证自动登录</h3><ul>
+<li>终端执行</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C  &apos;youremail@domain.com&apos;</div><div class="line">scp ~/.ssh/id_rsa.pub username@hostname:~/ #将公钥文件复制至ssh服务器</div><div class="line">ssh username@hostname #使用用户名和密码方式登录至ssh服务器</div><div class="line">mkdir .ssh  #若.ssh目录已存在，可省略此步</div><div class="line">cat id_rsa.pub &gt;&gt; .ssh/authorized_keys #将公钥文件id_rsa.pub文件内容追加到authorized_keys文件</div><div class="line">vi ~/.ssh/config #若没有该文件，直接新建即可</div><div class="line">//添加文件内容格式如下：</div><div class="line">Host            alias #自定义别名</div><div class="line">HostName        hostname #替换为你的ssh服务器ip或domain</div><div class="line">Port            port #ssh服务器端口，默认为22</div><div class="line">User            user #ssh服务器用户名</div><div class="line">IdentityFile    ~/.ssh/id_rsa #第一个步骤生成的公钥文件对应的私钥文件</div></pre></td></tr></table></figure>
+<p>注意把每行注释删掉，保存之后就可以通过 ssh alias #alias是你在~/.ssh/config文件配置的别名 登录ssh服务器</p>
+<h3 id="配置git"><a href="#配置git" class="headerlink" title="配置git"></a>配置git</h3><ul>
+<li>终端执行</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git config --global user.name &quot;yourname&quot;</div><div class="line">git config --global user.email  &quot;youremail@domain.com&quot;</div><div class="line">cat ~/.ssh/id_rsa.pub</div><div class="line">若不存在，则通过 ssh-keygen -t rsa -C  &apos;youremail@domain.com&apos; 生成 ~/.ssh/id_rsa.pub</div><div class="line">把id_rsa.pub文件里的内容复制到GitHub</div></pre></td></tr></table></figure>
+<h3 id="安装Homebrew"><a href="#安装Homebrew" class="headerlink" title="安装Homebrew"></a>安装Homebrew</h3><ul>
+<li>终端执行</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; #有条件的开一下终端代理会更快</div><div class="line">brew install wget #顺带安装个wget</div></pre></td></tr></table></figure>
+<h3 id="增强文件快速预览"><a href="#增强文件快速预览" class="headerlink" title="增强文件快速预览"></a>增强文件快速预览</h3><ul>
+<li>终端执行</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo</div></pre></td></tr></table></figure>
+<h3 id="安装MPV播放器"><a href="#安装MPV播放器" class="headerlink" title="安装MPV播放器"></a>安装MPV播放器</h3><ul>
+<li>终端执行</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">brew install mpv --with-bundle</div><div class="line">brew linkapps mpv</div><div class="line">vi ~/.config/mpv/mpv.conf</div><div class="line"></div><div class="line">#作者：YANG Cage</div><div class="line">#链接：https://www.zhihu.com/question/19552878/answer/49884947</div><div class="line">#来源：知乎</div><div class="line"></div><div class="line">#for intel HD4000 above</div><div class="line">vo=opengl-hq:icc-profile-auto</div><div class="line">#osd message, you can press o to display the osd message</div><div class="line">osd-status-msg=&quot;$&#123;time-pos/full&#125; / $&#123;length/full&#125; ($&#123;percent-pos&#125;%)&quot;</div><div class="line">#makes the player window stay on top of other windows</div><div class="line">ontop=yes</div><div class="line">#always save the current playback position on quit</div><div class="line">save-position-on-quit=yes</div><div class="line">#adjust the initial window size to 50%</div><div class="line">geometry=50%</div><div class="line">#for network play</div><div class="line">cache=8192</div><div class="line">#choose the default subtitle to chinese</div><div class="line">slang=zh,chi</div><div class="line">#for GB2312 GBK BIG5 charset, use enca convert them to utf8</div><div class="line">sub-codepage=enca:zh:utf8</div></pre></td></tr></table></figure>
+<p>###hexo博客</p>
+<ul>
+<li>Node.js</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">curl https://raw.github.com/creationix/nvm/master/install.sh | sh</div><div class="line">或者</div><div class="line">brew install node</div></pre></td></tr></table></figure>
+<ul>
+<li>hexo</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#先解决国内npm缓慢</div><div class="line">npm config set registry http://registry.npm.taobao.org</div><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<h3 id="信任“任何来源”"><a href="#信任“任何来源”" class="headerlink" title="信任“任何来源”"></a>信任“任何来源”</h3><ul>
+<li>终端执行 </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo spctl --master-disable</div><div class="line">//注：如果在系统偏好设置的“安全与隐私”中重新选中允许App Store 和被认可的开发者App，允许“任何来源”App的选项会再次消失，可运行上述命令再次打开“任何来源”。</div></pre></td></tr></table></figure>
+<h3 id="重置launchpad默认布局"><a href="#重置launchpad默认布局" class="headerlink" title="重置launchpad默认布局"></a>重置launchpad默认布局</h3><ul>
+<li>终端执行</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">defaults write com.apple.dock ResetLaunchPad -bool true &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
+<h3 id="开启macOS原生读写NTFS分区功能"><a href="#开启macOS原生读写NTFS分区功能" class="headerlink" title="开启macOS原生读写NTFS分区功能"></a>开启macOS原生读写NTFS分区功能</h3><ul>
+<li>下载 <a href="macOS-ntfs.zip">macOS-ntfs</a> 并解压</li>
+</ul>
+<p>cd to Script Directory, then:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo cp ntfsmount.sh ntfsfix /usr/bin</div><div class="line">sudo cp libntfs.9.dylib /usr/local/lib/libntfs.9.dylib</div><div class="line">之后每次使用</div><div class="line">sudo ntfsmount.sh labelname #挂载对应分区名</div></pre></td></tr></table></figure>
+<h3 id="下载工具"><a href="#下载工具" class="headerlink" title="下载工具"></a>下载工具</h3><ul>
+<li><a href="https://github.com/yangshun1029/aria2gui/releases/latest" target="_blank" rel="external">Aria2Gui</a> 配合<a href="https://chrome.google.com/webstore/detail/yaaw-for-chrome/dennnbdlpgjgbcjfgaohdahloollfgoc" target="_blank" rel="external">YAAW-for-Chrome</a> 或者 <a href="https://github.com/acgotaku/BaiduExporter" target="_blank" rel="external">BaiduExporter</a> 食用更佳</li>
+</ul>
+<h3 id="常用软件推荐"><a href="#常用软件推荐" class="headerlink" title="常用软件推荐"></a>常用软件推荐</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="https://1password.com/" target="_blank" rel="external">1Password</a></td>
+<td style="text-align:left">用过就离不开的密码管理软件</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://github.com/JohnCoates/Aerial/releases/latest" target="_blank" rel="external">Aerial</a></td>
+<td style="text-align:left">Apple TV 中提取出来的屏保</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://itunes.apple.com/cn/app/amphetamine/id937984704?mt=12" target="_blank" rel="external">Amphetamine</a></td>
+<td style="text-align:left">Mac防休眠工具</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://freemacsoft.net/appcleaner/" target="_blank" rel="external">AppCleaner</a></td>
+<td style="text-align:left">强力卸载工具</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://itunes.apple.com/cn/app/backgrounds/id808501572?mt=12" target="_blank" rel="external">Backgrounds</a></td>
+<td style="text-align:left">Mac上的动态壁纸</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.coconut-flavour.com/coconutbattery/" target="_blank" rel="external">coconutBattery</a></td>
+<td style="text-align:left">检测Mac和iOS电池</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://kapeli.com/dash" target="_blank" rel="external">Dash</a></td>
+<td style="text-align:left">程序员必备</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://justgetflux.com/" target="_blank" rel="external">f.lux</a></td>
+<td style="text-align:left">自动调整色温护眼</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://itunes.apple.com/cn/app/ihash/id763902043?mt=12" target="_blank" rel="external">iHash</a></td>
+<td style="text-align:left">文件校验工具</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://itunes.apple.com/cn/app/mactracker/id430255202?mt=12" target="_blank" rel="external">Mactracker</a></td>
+<td style="text-align:left">Apple公司产品年鉴</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://zh.mweb.im/" target="_blank" rel="external">MWeb</a></td>
+<td style="text-align:left">最好的技术文章编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.office.com/" target="_blank" rel="external">Office</a></td>
+<td style="text-align:left">办公必备</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.sublimetext.com/3" target="_blank" rel="external">Sublime Text 3</a></td>
+<td style="text-align:left">程序员必备纯文本编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://itunes.apple.com/cn/app/the-unarchiver/id425424353?mt=12" target="_blank" rel="external">The Unarchiver</a></td>
+<td style="text-align:left">解压工具</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.typora.io/" target="_blank" rel="external">Typera</a></td>
+<td style="text-align:left">跨平台MarkDown编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://mac.xunlei.com/" target="_blank" rel="external">迅雷</a></td>
+<td style="text-align:left">会员加速很厉害</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Sublime-Text-3-build-3143-License-Key"><a href="#Sublime-Text-3-build-3143-License-Key" class="headerlink" title="Sublime Text 3 build 3143 License Key"></a>Sublime Text 3 build 3143 License Key</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">—– BEGIN LICENSE —–</div><div class="line">TwitterInc</div><div class="line">200 User License</div><div class="line">EA7E-890007</div><div class="line">1D77F72E 390CDD93 4DCBA022 FAF60790</div><div class="line">61AA12C0 A37081C5 D0316412 4584D136</div><div class="line">94D7F7D4 95BC8C1C 527DA828 560BB037</div><div class="line">D1EDDD8C AE7B379F 50C9D69D B35179EF</div><div class="line">2FE898C4 8E4277A8 555CE714 E1FB0E43</div><div class="line">D5D52613 C3D12E98 BC49967F 7652EED2</div><div class="line">9D2D2E61 67610860 6D338B72 5CF95C69</div><div class="line">E36B85CC 84991F19 7575D828 470A92AB</div><div class="line">—— END LICENSE ——</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+  
+</article>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-facebook bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+            <a href="#" class="fa fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到Linkedin"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给QQ好友"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            <a href="#" class="fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"Tips　| EGOISTK21's blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+    
+
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2017 EGOISTK21
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+    <script src="/js/GithubRepoWidget.js"></script>
+
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+             github: ".github-widget a", 
+            
+             post: ".article-entry a[href], .copyright a[href]", 
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+    <script>
+        var originTitle = document.title;
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+                clearTimeout(titleTime);
+            }
+            else {
+                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+                titleTime = setTimeout(function() {
+                    document.title = originTitle;
+                }, 2000);
+            }
+        })
+    </script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
