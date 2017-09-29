@@ -22,7 +22,7 @@
 <meta property="og:site_name" content="EGOISTK21&#39;s blog">
 <meta property="og:description" content="macOS食用指南抹盘重装 需要 Install macOS High Sierra.app、8GB至少的U盘。 格式化U盘为 Mac OS 拓展（日志式）GUID分区表 终端执行  1sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-09-29T13:27:20.691Z">
+<meta property="og:updated_time" content="2017-09-29T13:31:10.834Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tips">
 <meta name="twitter:description" content="macOS食用指南抹盘重装 需要 Install macOS High Sierra.app、8GB至少的U盘。 格式化U盘为 Mac OS 拓展（日志式）GUID分区表 终端执行  1sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes">
@@ -403,8 +403,7 @@
 <li>终端执行</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">brew install mpv --with-bundle</div><div class="line">brew linkapps mpv</div><div class="line">vi ~/.config/mpv/mpv.conf</div><div class="line"></div><div class="line">#作者：YANG Cage</div><div class="line">#链接：https://www.zhihu.com/question/19552878/answer/49884947</div><div class="line">#来源：知乎</div><div class="line"></div><div class="line">#for intel HD4000 above</div><div class="line">vo=opengl-hq:icc-profile-auto</div><div class="line">#osd message, you can press o to display the osd message</div><div class="line">osd-status-msg=&quot;$&#123;time-pos/full&#125; / $&#123;length/full&#125; ($&#123;percent-pos&#125;%)&quot;</div><div class="line">#makes the player window stay on top of other windows</div><div class="line">ontop=yes</div><div class="line">#always save the current playback position on quit</div><div class="line">save-position-on-quit=yes</div><div class="line">#adjust the initial window size to 50%</div><div class="line">geometry=50%</div><div class="line">#for network play</div><div class="line">cache=8192</div><div class="line">#choose the default subtitle to chinese</div><div class="line">slang=zh,chi</div><div class="line">#for GB2312 GBK BIG5 charset, use enca convert them to utf8</div><div class="line">sub-codepage=enca:zh:utf8</div></pre></td></tr></table></figure>
-<p>###hexo博客</p>
-<ul>
+<h3 id="hexo博客"><a href="#hexo博客" class="headerlink" title="hexo博客"></a>hexo博客</h3><ul>
 <li>Node.js</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">curl https://raw.github.com/creationix/nvm/master/install.sh | sh</div><div class="line">或者</div><div class="line">brew install node</div></pre></td></tr></table></figure>
